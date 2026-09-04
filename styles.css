@@ -1,0 +1,35 @@
+
+#container{
+    position: absolute;
+    margin: auto;
+    /* height: 100px;
+    width: 364px; */
+    /* width: 100%;       */
+    /* min-height: 100vh; */
+    height: 640px;
+    width: 840px;
+    background-color: grey;
+}
+
+#background {
+    height: 640px;
+    width: 640px;
+    position: absolute;
+    background-color: aqua;
+    left: 100px;
+    right: 100px;
+}
+
+#skin {
+    height: 640px;
+    width: 640px;
+    position: absolute;
+    /* might need the relative pth */
+    background-image: url("frames/light-skin.jpg");
+}
+
+/* div {
+    height: 64px;
+    width: 64px;
+    position: absolute;
+}; */
