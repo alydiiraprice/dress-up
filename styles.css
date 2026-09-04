@@ -119,6 +119,35 @@
 }
 /* EYES END */
 
+/* HAIR START */
+#hair {
+    height: 640px;
+    width: 640px;
+    position: absolute;
+}
+
+.brown-hair {
+    height: 640px;
+    width: 640px;
+    position: absolute;
+    /* might need the relative pth */
+    background-image: url("frames/long-brown-hair.png");
+}
+
+.blonde-hair {
+    height: 640px;
+    width: 640px;
+    position: absolute;
+    /* might need the relative pth */
+    background-image: url("frames/blonde-updo.png");
+}
+
+#nextHair {
+    position: relative;
+    z-index: 10;
+}
+/* HAIR END */
+
 #nextSkin {
     position: relative;
     z-index: 10;
