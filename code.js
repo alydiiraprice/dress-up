@@ -3,6 +3,7 @@
 var state = {
     skin : 0,
     makeup : 0,
+    eyes : 0,
 };
 
 // Very simple state-swticher function -- make this more scalable
@@ -45,12 +46,31 @@ function nextMakeup() {
         // change variable names eg olive-skin
         makeupColor.setAttribute("class", "fancy-makeup");
         state.makeup++;
-        console.log(state.skin);
+        console.log(state.makeup);
     } else if (state.makeup===2) {
         // change variable names eg olive-skin
         makeupColor.setAttribute("class", "simple-makeup");
         state.makeup=0;
         console.log(state.makeup);
+    }
+}
+
+function nextEyes() {
+    console.log("inside function nextEyes");
+    var eyeColor=document.getElementById("eyes");
+    
+    if (state.eyes===0) {
+        // change variable names eg olive-skin
+        eyeColor.setAttribute("class", "blue-eyes");
+        state.eyes++;
+    } else if (state.eyes===1) {
+        // change variable names eg olive-skin
+        eyeColor.setAttribute("class", "green-eyes");
+        state.eyes++;
+    } else if (state.eyes===2) {
+        // change variable names eg olive-skin
+        eyeColor.setAttribute("class", "black-eyes");
+        state.eyes=0;
     }
 }
 
@@ -61,5 +81,6 @@ function init () {
     // state.skin=0;
     document.getElementById("skin").className="light-skin";
     document.getElementById("makeup").className="simple-makeup";
+    document.getElementById("eyes").className="black-eyes";
 }
 

@@ -32,12 +32,14 @@
     position: absolute;
 }
 
+
+
 .light-skin {
     height: 640px;
     width: 640px;
     position: absolute;
     /* might need the relative pth */
-    background-image: url("frames/light-skin.jpg");
+    background-image: url("frames/light-skin.png");
 }
 
 .olive-skin {
@@ -45,7 +47,7 @@
     width: 640px;
     position: absolute;
     /* might need the relative pth */
-    background-image: url("frames/olive-skin.jpg");
+    background-image: url("frames/olive-skin.png");
 }
 
 .purple-skin {
@@ -53,7 +55,7 @@
     width: 640px;
     position: absolute;
     /* might need the relative pth */
-    background-image: url("frames/purple-skin.jpg");
+    background-image: url("frames/purple-skin.png");
 }
 
 .simple-makeup {
@@ -61,7 +63,7 @@
     width: 640px;
     position: absolute;
     /* might need the relative pth */
-    background-image: url("frames/simple-makeup.jpg");
+    background-image: url("frames/simple-makeup.png");
 }
 
 .purple-makeup {
@@ -69,7 +71,7 @@
     width: 640px;
     position: absolute;
     /* might need the relative pth */
-    background-image: url("frames/purple-makeup.jpg");
+    background-image: url("frames/purple-makeup.png");
 }
 
 .fancy-makeup {
@@ -77,8 +79,45 @@
     width: 640px;
     position: absolute;
     /* might need the relative pth */
-    background-image: url("frames/fancy-makeup.jpg");
+    background-image: url("frames/fancy-makeup.png");
 }
+
+/* EYES START */
+#eyes {
+    height: 640px;
+    width: 640px;
+    position: absolute;
+}
+
+.black-eyes{
+    height: 640px;
+    width: 640px;
+    position: absolute;
+    /* might need the relative pth */
+    background-image: url("frames/black-eyes.png");
+}
+
+.blue-eyes {
+    height: 640px;
+    width: 640px;
+    position: absolute;
+    /* might need the relative pth */
+    background-image: url("frames/blue-eyes.png");
+}
+
+.green-eyes {
+    height: 640px;
+    width: 640px;
+    position: absolute;
+    /* might need the relative pth */
+    background-image: url("frames/green-eyes.png");
+}
+
+#nextEyes {
+    position: relative;
+    z-index: 10;
+}
+/* EYES END */
 
 #nextSkin {
     position: relative;
@@ -89,6 +128,7 @@
     position: relative;
     z-index: 10;
 }
+
 
 /* div {
     height: 64px;
