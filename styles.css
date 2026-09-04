@@ -24,8 +24,70 @@
     height: 640px;
     width: 640px;
     position: absolute;
+}
+
+#makeup {
+    height: 640px;
+    width: 640px;
+    position: absolute;
+}
+
+.light-skin {
+    height: 640px;
+    width: 640px;
+    position: absolute;
     /* might need the relative pth */
     background-image: url("frames/light-skin.jpg");
+}
+
+.olive-skin {
+    height: 640px;
+    width: 640px;
+    position: absolute;
+    /* might need the relative pth */
+    background-image: url("frames/olive-skin.jpg");
+}
+
+.purple-skin {
+    height: 640px;
+    width: 640px;
+    position: absolute;
+    /* might need the relative pth */
+    background-image: url("frames/purple-skin.jpg");
+}
+
+.simple-makeup {
+    height: 640px;
+    width: 640px;
+    position: absolute;
+    /* might need the relative pth */
+    background-image: url("frames/simple-makeup.jpg");
+}
+
+.purple-makeup {
+    height: 640px;
+    width: 640px;
+    position: absolute;
+    /* might need the relative pth */
+    background-image: url("frames/purple-makeup.jpg");
+}
+
+.fancy-makeup {
+    height: 640px;
+    width: 640px;
+    position: absolute;
+    /* might need the relative pth */
+    background-image: url("frames/fancy-makeup.jpg");
+}
+
+#nextSkin {
+    position: relative;
+    z-index: 10;
+}
+
+#nextMakeup {
+    position: relative;
+    z-index: 10;
 }
 
 /* div {
