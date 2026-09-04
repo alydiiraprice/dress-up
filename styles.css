@@ -1,0 +1,137 @@
+
+#container{
+    position: absolute;
+    margin: auto;
+    /* height: 100px;
+    width: 364px; */
+    /* width: 100%;       */
+    /* min-height: 100vh; */
+    height: 640px;
+    width: 840px;
+    background-color: grey;
+}
+
+#background {
+    height: 640px;
+    width: 640px;
+    position: absolute;
+    background-color: aqua;
+    left: 100px;
+    right: 100px;
+}
+
+#skin {
+    height: 640px;
+    width: 640px;
+    position: absolute;
+}
+
+#makeup {
+    height: 640px;
+    width: 640px;
+    position: absolute;
+}
+
+
+
+.light-skin {
+    height: 640px;
+    width: 640px;
+    position: absolute;
+    /* might need the relative pth */
+    background-image: url("frames/light-skin.png");
+}
+
+.olive-skin {
+    height: 640px;
+    width: 640px;
+    position: absolute;
+    /* might need the relative pth */
+    background-image: url("frames/olive-skin.png");
+}
+
+.purple-skin {
+    height: 640px;
+    width: 640px;
+    position: absolute;
+    /* might need the relative pth */
+    background-image: url("frames/purple-skin.png");
+}
+
+.simple-makeup {
+    height: 640px;
+    width: 640px;
+    position: absolute;
+    /* might need the relative pth */
+    background-image: url("frames/simple-makeup.png");
+}
+
+.purple-makeup {
+    height: 640px;
+    width: 640px;
+    position: absolute;
+    /* might need the relative pth */
+    background-image: url("frames/purple-makeup.png");
+}
+
+.fancy-makeup {
+    height: 640px;
+    width: 640px;
+    position: absolute;
+    /* might need the relative pth */
+    background-image: url("frames/fancy-makeup.png");
+}
+
+/* EYES START */
+#eyes {
+    height: 640px;
+    width: 640px;
+    position: absolute;
+}
+
+.black-eyes{
+    height: 640px;
+    width: 640px;
+    position: absolute;
+    /* might need the relative pth */
+    background-image: url("frames/black-eyes.png");
+}
+
+.blue-eyes {
+    height: 640px;
+    width: 640px;
+    position: absolute;
+    /* might need the relative pth */
+    background-image: url("frames/blue-eyes.png");
+}
+
+.green-eyes {
+    height: 640px;
+    width: 640px;
+    position: absolute;
+    /* might need the relative pth */
+    background-image: url("frames/green-eyes.png");
+}
+
+#nextEyes {
+    position: relative;
+    z-index: 10;
+}
+/* EYES END */
+
+#nextSkin {
+    position: relative;
+    z-index: 10;
+}
+
+#nextMakeup {
+    position: relative;
+    z-index: 10;
+}
+
+
+/* div {
+    height: 64px;
+    width: 64px;
+    position: absolute;
+}; */
