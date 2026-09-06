@@ -112,19 +112,12 @@ function nextShirt() {
     console.log("inside function nextShirt");
     console.log(state.shirts);
     var shirtsType=document.getElementById("shirts");
-    
-
     if (state.shirts===0) {
         // change variable names eg olive-skin
-        shirtsType.setAttribute("class", "");
+        shirtsType.setAttribute("class", "leopard-shirt");
         state.shirts++;
     } else if (state.shirts===1) {
-        // change variable names eg olive-skin
-        shirtsType.setAttribute("class", "");
-        state.shirts++;
-    } else if (state.shirts===2) {
-        // change variable names eg olive-skin
-        shirtsType.setAttribute("class", "");
+        shirtsType.setAttribute("class", "black-shirt");
         state.shirts=0;
     }
 }
@@ -133,11 +126,10 @@ function nextShirt() {
 window.onload=init;
 function init () {
     console.log("window loaded");
-    // state.skin=0;
     document.getElementById("skin").className="light-skin";
     document.getElementById("makeup").className="simple-makeup";
     document.getElementById("eyes").className="black-eyes";
     document.getElementById("hair").className="blonde-hair";
-    document.getElementById("shirts").className="tbd";
+    document.getElementById("shirts").className="black-shirt";
 }
 

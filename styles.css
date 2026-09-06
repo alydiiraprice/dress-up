@@ -179,31 +179,21 @@
     position: absolute;
 }
 
-/* .black-eyes{
+.black-shirt{
     height: 640px;
     width: 640px;
     position: absolute;
-    /* might need the relative pth */
-    /* background-image: url("frames/black-eyes.png");
-} */
+    background-image: url("frames/black-shirt.png");
+}
 
-/* .blue-eyes {
+.leopard-shirt {
     height: 640px;
     width: 640px;
     position: absolute;
-    /* might need the relative pth */
-    /* background-image: url("frames/blue-eyes.png");
-} */
+    background-image: url("frames/leopard-shirt.png");
+}
 
-/* .green-eyes {
-    height: 640px;
-    width: 640px;
-    position: absolute;
-    /* might need the relative pth */
-    /* background-image: url("frames/green-eyes.png");
-} */ 
-
-#nextShirts {
+#nextShirt {
     position: relative;
     z-index: 10;
 }
