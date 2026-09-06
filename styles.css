@@ -172,6 +172,43 @@
 }
 /* HAIR END */
 
+/* SHIRTS START */
+#shirts {
+    height: 640px;
+    width: 640px;
+    position: absolute;
+}
+
+/* .black-eyes{
+    height: 640px;
+    width: 640px;
+    position: absolute;
+    /* might need the relative pth */
+    /* background-image: url("frames/black-eyes.png");
+} */
+
+/* .blue-eyes {
+    height: 640px;
+    width: 640px;
+    position: absolute;
+    /* might need the relative pth */
+    /* background-image: url("frames/blue-eyes.png");
+} */
+
+/* .green-eyes {
+    height: 640px;
+    width: 640px;
+    position: absolute;
+    /* might need the relative pth */
+    /* background-image: url("frames/green-eyes.png");
+} */ 
+
+#nextShirts {
+    position: relative;
+    z-index: 10;
+}
+/* SHIRTS END */
+
 #nextSkin {
     position: relative;
     z-index: 10;
