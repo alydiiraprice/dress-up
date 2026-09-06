@@ -7,25 +7,28 @@
     <title>Dress Up Game</title>
 </head>
 <body>
-    <div id="container">
-        <div id="background">
-            <div id="skin"></div>
-            <div id="makeup"></div>
-            <div id="eyes"></div>
-            <div id="hair"></div>
-            <div id="accessories"></div>
-            <div id="pants"></div>
-            <div id="shirts"></div>
-        </div>
+    <div id="background">
+        <div id="scene-bg"></div>
+        <div id="skin"></div>
+        <div id="makeup"></div>
+        <div id="eyes"></div>
+        <div id="hair"></div>
+        <div id="accessories"></div>
+        <div id="pants"></div>
+        <div id="shirts"></div>
     </div>
-    <input type="button" value="NEXT" id="nextSkin" onclick="nextSkin()">
-    <input type="button" value="NEXT" id="nextMakeup" onclick="nextMakeup()">
-    <input type="button" value="NEXT" id="nextEyes" onclick="nextEyes()">
-    <input type="button" value="NEXT" id="nextHair" onclick="nextHair()">
-    <input type="button" value="NEXT" id="nextShirt" onclick="nextShirt()">
-    <input type="button" value="NEXT" id="nextPant" onclick="nextPant()">
-    <input type="button" value="NEXT" id="nextAccessories" onclick="nextAccessories()">
-    <input type="button" value="NEXT" id="nextBackground" onclick="nextBackground()">
+
+    <div id="controls">
+        <input type="button" value="Skin" id="nextSkin" onclick="nextSkin()">
+        <input type="button" value="Makeup" id="nextMakeup" onclick="nextMakeup()">
+        <input type="button" value="Eyes" id="nextEyes" onclick="nextEyes()">
+        <input type="button" value="Hair" id="nextHair" onclick="nextHair()">
+        <input type="button" value="Tops" id="nextShirt" onclick="nextShirt()">
+        <input type="button" value="Bottoms" id="nextPant" onclick="nextPant()">
+        <input type="button" value="Accessories" id="nextAccessories" onclick="nextAccessories()">
+        <input type="button" value="Scene" id="nextScene" onclick="nextScene()">
+    </div>
+    
 </body>
 <script src="code.js">
 </script>

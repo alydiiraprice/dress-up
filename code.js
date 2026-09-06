@@ -11,25 +11,21 @@ var state = {
     background : 0
 };
 
-// Very simple state-swticher function -- make this more scalable
+// Very simple state-swticher function
 function nextSkin() {
     console.log("inside function nextSkin");
     console.log(state.skin);
     var skinColor=document.getElementById("skin");
     
-
     if (state.skin===0) {
-        // change variable names eg olive-skin
         skinColor.setAttribute("class", "olive-skin");
         state.skin++;
         console.log(state.skin);
     } else if (state.skin===1) {
-        // change variable names eg olive-skin
         skinColor.setAttribute("class", "purple-skin");
         state.skin++;
         console.log(state.skin);
     } else if (state.skin===2) {
-        // change variable names eg olive-skin
         skinColor.setAttribute("class", "light-skin");
         state.skin=0;
         console.log(state.skin);
@@ -41,19 +37,15 @@ function nextMakeup() {
     console.log(state.makeup);
     var makeupColor=document.getElementById("makeup");
     
-
     if (state.makeup===0) {
-        // change variable names eg olive-skin
         makeupColor.setAttribute("class", "purple-makeup");
         state.makeup++;
         console.log(state.makeup);
     } else if (state.makeup===1) {
-        // change variable names eg olive-skin
         makeupColor.setAttribute("class", "fancy-makeup");
         state.makeup++;
         console.log(state.makeup);
     } else if (state.makeup===2) {
-        // change variable names eg olive-skin
         makeupColor.setAttribute("class", "simple-makeup");
         state.makeup=0;
         console.log(state.makeup);
@@ -65,15 +57,12 @@ function nextEyes() {
     var eyeColor=document.getElementById("eyes");
     
     if (state.eyes===0) {
-        // change variable names eg olive-skin
         eyeColor.setAttribute("class", "blue-eyes");
         state.eyes++;
     } else if (state.eyes===1) {
-        // change variable names eg olive-skin
         eyeColor.setAttribute("class", "green-eyes");
         state.eyes++;
     } else if (state.eyes===2) {
-        // change variable names eg olive-skin
         eyeColor.setAttribute("class", "black-eyes");
         state.eyes=0;
     }
@@ -84,27 +73,22 @@ function nextHair() {
     var hairColor=document.getElementById("hair");
     
     if (state.hair===0) {
-        // change variable names eg olive-skin
         hairColor.setAttribute("class", "brown-hair");
         state.hair++;
         console.log(state.hair);
     } else if (state.hair===1) {
-        // change variable names eg olive-skin
         hairColor.setAttribute("class", "orange-hair");
         state.hair++;
         console.log(state.hair);
     } else if (state.hair===2) {
-        // change variable names eg olive-skin
         hairColor.setAttribute("class", "black-hair");
         state.hair++;
         console.log(state.hair);
     } else if (state.hair===3) {
-        // change variable names eg olive-skin
         hairColor.setAttribute("class", "red-hair");
         state.hair++;
         console.log(state.hair);
     }  else if (state.hair===4) {
-        // change variable names eg olive-skin
         hairColor.setAttribute("class", "blonde-hair");
         state.hair = 0;
         console.log(state.hair);
@@ -115,8 +99,8 @@ function nextShirt() {
     console.log("inside function nextShirt");
     console.log(state.shirts);
     var shirtsType=document.getElementById("shirts");
+
     if (state.shirts===0) {
-        // change variable names eg olive-skin
         shirtsType.setAttribute("class", "leopard-shirt");
         state.shirts++;
     } else if (state.shirts===1) {
@@ -129,8 +113,9 @@ function nextPant() {
     console.log("inside function nextPant");
     console.log(state.pants);
     var pantsType=document.getElementById("pants");
+
     if (state.pants===0) {
-        pants.setAttribute("class", "purple-skirt");
+        pantsType.setAttribute("class", "purple-skirt");
         state.pants++;
     } else if (state.pants===1) {
         pantsType.setAttribute("class", "red-skirt");
@@ -142,8 +127,9 @@ function nextAccessories() {
     console.log("inside function nextAccessories");
     console.log(state.accessories);
     var accessoriesColor=document.getElementById("accessories");
+
     if (state.accessories===0) {
-        accessories.setAttribute("class", "silver-accessories");
+        accessoriesColor.setAttribute("class", "silver-accessories");
         state.accessories++;
     } else if (state.accessories===1) {
         accessoriesColor.setAttribute("class", "gold-accessories");
@@ -151,12 +137,13 @@ function nextAccessories() {
     }
 }
 
-function nextBackground() {
-    console.log("inside function nextBG");
+function nextScene() {
+    console.log("inside function nextScene");
     console.log(state.background);
-    var backgroundColor=document.getElementById("background");
+    var backgroundColor=document.getElementById("scene-bg");
+    
     if (state.background===0) {
-        background.setAttribute("class", "red-bg");
+        backgroundColor.setAttribute("class", "red-bg");
         state.background++;
     } else if (state.background===1) {
         backgroundColor.setAttribute("class", "purple-bg");
@@ -175,6 +162,6 @@ function init () {
     document.getElementById("shirts").className="black-shirt";
     document.getElementById("pants").className="red-skirt";
     document.getElementById("accessories").className="gold-accessories";
-    document.getElementById("background").className="purple-bg";
+    document.getElementById("scene-bg").className="purple-bg";
 }
 

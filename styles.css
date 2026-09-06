@@ -1,37 +1,39 @@
 
-#container{
-    position: absolute;
-    margin: auto;
-    /* height: 100px;
-    width: 364px; */
-    /* width: 100%;       */
-    /* min-height: 100vh; */
-    height: 640px;
-    width: 840px;
-    background-color: grey;
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: #f0f0f0; /* page backdrop, separate from the character stage */
 }
 
 #background {
     height: 640px;
     width: 640px;
-    position: absolute;
-    left: 100px;
-    right: 100px;
+    position: relative; /* anchors the absolutely-positioned layers inside it */
 }
 
+#controls {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: 640px;
+}
+
+#controls input {
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+/* SKIN STARTS */
 #skin {
     height: 640px;
     width: 640px;
     position: absolute;
 }
-
-#makeup {
-    height: 640px;
-    width: 640px;
-    position: absolute;
-}
-
-
 
 .light-skin {
     height: 640px;
@@ -57,6 +59,19 @@
     background-image: url("frames/purple-skin.png");
 }
 
+#nextSkin {
+    position: relative;
+    z-index: 10;
+}
+/* SKIN ENDS */
+
+/* MAKEUP STARTS */
+#makeup {
+    height: 640px;
+    width: 640px;
+    position: absolute;
+}
+
 .simple-makeup {
     height: 640px;
     width: 640px;
@@ -80,6 +95,12 @@
     /* might need the relative pth */
     background-image: url("frames/fancy-makeup.png");
 }
+
+#nextMakeup {
+    position: relative;
+    z-index: 10;
+}
+/* MAKEUP ENDS */
 
 /* EYES START */
 #eyes {
@@ -253,13 +274,13 @@
 /* ACCESSORIES END */
 
 /* BACKGROUND START */
-#background {
+#scene-bg {
     height: 640px;
     width: 640px;
     position: absolute;
 }
 
-.red-bg{
+.red-bg {
     height: 640px;
     width: 640px;
     position: absolute;
@@ -273,25 +294,10 @@
     background-image: url("frames/purple-bg.png");
 }
 
-#nextBackground {
+#nextScene {
     position: relative;
     z-index: 10;
 }
+
 /* BACKGROUND END */
 
-#nextSkin {
-    position: relative;
-    z-index: 10;
-}
-
-#nextMakeup {
-    position: relative;
-    z-index: 10;
-}
-
-
-/* div {
-    height: 64px;
-    width: 64px;
-    position: absolute;
-}; */
