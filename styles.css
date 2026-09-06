@@ -119,6 +119,59 @@
 }
 /* EYES END */
 
+/* HAIR START */
+#hair {
+    height: 640px;
+    width: 640px;
+    position: absolute;
+}
+
+.brown-hair {
+    height: 640px;
+    width: 640px;
+    position: absolute;
+    /* might need the relative pth */
+    background-image: url("frames/dark-brown-bob.png");
+}
+
+.blonde-hair {
+    height: 640px;
+    width: 640px;
+    position: absolute;
+    /* might need the relative pth */
+    background-image: url("frames/blonde-updo.png");
+}
+
+.orange-hair {
+    height: 640px;
+    width: 640px;
+    position: absolute;
+    /* might need the relative pth */
+    background-image: url("frames/orange-bob.png");
+}
+
+.red-hair {
+    height: 640px;
+    width: 640px;
+    position: absolute;
+    /* might need the relative pth */
+    background-image: url("frames/red-bob.png");
+}
+
+.black-hair {
+    height: 640px;
+    width: 640px;
+    position: absolute;
+    /* might need the relative pth */
+    background-image: url("frames/blac-bob.png");
+}
+
+#nextHair {
+    position: relative;
+    z-index: 10;
+}
+/* HAIR END */
+
 #nextSkin {
     position: relative;
     z-index: 10;
