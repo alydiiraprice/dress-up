@@ -83,10 +83,27 @@ function nextHair() {
         // change variable names eg olive-skin
         hairColor.setAttribute("class", "brown-hair");
         state.hair++;
+        console.log(state.hair);
     } else if (state.hair===1) {
+        // change variable names eg olive-skin
+        hairColor.setAttribute("class", "orange-hair");
+        state.hair++;
+        console.log(state.hair);
+    } else if (state.hair===2) {
+        // change variable names eg olive-skin
+        hairColor.setAttribute("class", "black-hair");
+        state.hair++;
+        console.log(state.hair);
+    } else if (state.hair===3) {
+        // change variable names eg olive-skin
+        hairColor.setAttribute("class", "red-hair");
+        state.hair++;
+        console.log(state.hair);
+    }  else if (state.hair===4) {
         // change variable names eg olive-skin
         hairColor.setAttribute("class", "blonde-hair");
         state.hair = 0;
+        console.log(state.hair);
     }
 }
 
