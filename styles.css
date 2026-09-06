@@ -226,6 +226,33 @@
 }
 /* PANTS END */
 
+/* ACCESSORIES START */
+#accessories {
+    height: 640px;
+    width: 640px;
+    position: absolute;
+}
+
+.gold-accessories{
+    height: 640px;
+    width: 640px;
+    position: absolute;
+    background-image: url("frames/gold-accessories.png");
+}
+
+.silver-accessories {
+    height: 640px;
+    width: 640px;
+    position: absolute;
+    background-image: url("frames/silver-accessories.png");
+}
+
+#nextAccessories {
+    position: relative;
+    z-index: 10;
+}
+/* ACCESSORIES END */
+
 #nextSkin {
     position: relative;
     z-index: 10;
