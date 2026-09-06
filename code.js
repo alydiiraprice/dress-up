@@ -5,7 +5,8 @@ var state = {
     makeup : 0,
     eyes : 0,
     hair : 0,
-    shirts : 0
+    shirts : 0,
+    pants: 0
 };
 
 // Very simple state-swticher function -- make this more scalable
@@ -122,6 +123,19 @@ function nextShirt() {
     }
 }
 
+function nextPant() {
+    console.log("inside function nextPant");
+    console.log(state.pants);
+    var pantsType=document.getElementById("pants");
+    if (state.pants===0) {
+        pants.setAttribute("class", "purple-skirt");
+        state.pants++;
+    } else if (state.pants===1) {
+        pantsType.setAttribute("class", "red-skirt");
+        state.pants=0;
+    }
+}
+
 // default vals on load
 window.onload=init;
 function init () {
@@ -131,5 +145,6 @@ function init () {
     document.getElementById("eyes").className="black-eyes";
     document.getElementById("hair").className="blonde-hair";
     document.getElementById("shirts").className="black-shirt";
+    document.getElementById("pants").className="red-skirt";
 }
 
