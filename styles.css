@@ -172,6 +172,33 @@
 }
 /* HAIR END */
 
+/* SHIRTS START */
+#shirts {
+    height: 640px;
+    width: 640px;
+    position: absolute;
+}
+
+.black-shirt{
+    height: 640px;
+    width: 640px;
+    position: absolute;
+    background-image: url("frames/black-shirt.png");
+}
+
+.leopard-shirt {
+    height: 640px;
+    width: 640px;
+    position: absolute;
+    background-image: url("frames/leopard-shirt.png");
+}
+
+#nextShirt {
+    position: relative;
+    z-index: 10;
+}
+/* SHIRTS END */
+
 #nextSkin {
     position: relative;
     z-index: 10;
