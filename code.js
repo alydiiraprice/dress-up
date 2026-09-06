@@ -6,7 +6,8 @@ var state = {
     eyes : 0,
     hair : 0,
     shirts : 0,
-    pants: 0
+    pants: 0,
+    accessories : 0
 };
 
 // Very simple state-swticher function -- make this more scalable
@@ -136,6 +137,19 @@ function nextPant() {
     }
 }
 
+function nextAccessories() {
+    console.log("inside function nextAccessories");
+    console.log(state.accessories);
+    var accessoriesColor=document.getElementById("accessories");
+    if (state.accessories===0) {
+        accessories.setAttribute("class", "silver-accessories");
+        state.accessories++;
+    } else if (state.accessories===1) {
+        accessoriesColor.setAttribute("class", "gold-accessories");
+        state.accessories=0;
+    }
+}
+
 // default vals on load
 window.onload=init;
 function init () {
@@ -146,5 +160,6 @@ function init () {
     document.getElementById("hair").className="blonde-hair";
     document.getElementById("shirts").className="black-shirt";
     document.getElementById("pants").className="red-skirt";
+    document.getElementById("accessories").className="gold-accessories";
 }
 
